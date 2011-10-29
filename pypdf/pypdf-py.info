@@ -1,7 +1,7 @@
 Info2: <<
 
 Package: pypdf-py%type_pkg[python]
-Version: 1.12
+Version: 1.13
 Revision: 1
 Description: Pure-Python library built as a PDF toolkit
 DescDetail: <<
@@ -19,10 +19,10 @@ dependencies on external libraries. It can also work entirely on StringIO
 objects rather than file streams, allowing for PDF manipulation in memory.
 <<
 Source: http://pybrary.net/pyPdf/pyPdf-%v.tar.gz
-Source-MD5: 7be5f7f4659f64fd194e9eb9a38ad425
-Type: python (2.5 2.6)
+Source-MD5: 7a75ef56f227b78ae62d6e38d4b6b1da
+Type: python (2.5 2.6 2.7)
 Depends: python%type_pkg[python]
-BuildDepends: setuptools-py%type_pkg[python] (>= 0.6c5-1)
+BuildDepends: setuptools-py%type_pkg[python]
 CompileScript: <<
   #!/bin/bash -ev
   %p/bin/python%type_raw[python] setup.py build
