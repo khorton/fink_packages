@@ -1,6 +1,6 @@
 Info2: <<
 Package: image-exiftool-pm
-Version: 8.15
+Version: 8.65
 Revision: 1
 Description: Read and write image/movie meta information
 Type: perl
@@ -8,7 +8,7 @@ License: Artistic
 Maintainer: Benjamin Reed <image-exiftool-pm@fink.raccoonfink.com>
 
 Source: mirror:cpan:modules/by-module/Image/Image-ExifTool-%v.tar.gz
-Source-MD5: 750cc49c18ef1ed65300bc39bc4e6536
+Source-MD5: 8b27b63af0eec744afb7f373750c282b
 
 UseMaxBuildJobs: true
 
