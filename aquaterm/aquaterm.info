@@ -3,8 +3,6 @@ Version: tempv1.1.1
 Revision: 1
 Source: mirror:sourceforge:aquaterm/AquaTerm-AquaTerm-%v-0-g9fe8ac2.tar.gz
 Source-MD5: 931d696201e6d6cd3598de6eec65ab64
-# PatchFile: %n.patch
-# PatchFile-MD5: c22455cc8479795a2c8090ad0f791e4e
 BuildDepends: fink (>= 0.24.12-1)
 Depends: %N-shlibs (= %v-%r)
 GCC: 4.0
@@ -15,7 +13,6 @@ InstallScript: <<
  if test "%m" = "powerpc"; then archname="ppc"; else archname="%m"; fi
  ARCHS=$archname
  cd aquaterm
- #xcodebuild install -target AquaTerm -configuration Deployment DSTROOT=%d INSTALL_PATH=%p/Applications DYLIB_INSTALL_NAME_BASE=%p/Library/Frameworks GCC_PREPROCESSOR_DEFINITIONS="AQT_APP" ARCHS=$archname MACOSX_DEPLOYMENT_TARGET=10.7
  xcodebuild install -target AquaTerm DSTROOT=%d INSTALL_PATH=%p/Applications DYLIB_INSTALL_NAME_BASE=%p/Library/Frameworks GCC_PREPROCESSOR_DEFINITIONS="AQT_APP" ARCHS=$archname MACOSX_DEPLOYMENT_TARGET=10.7
  mkdir -p %i/include/aquaterm
  cp AQTAdapter.h aquaterm.h %i/include
@@ -36,7 +33,7 @@ SplitOff: <<
   Shlibs: <<
    %p/Library/Frameworks/AquaTerm.framework/Versions/A/AquaTerm 1.0.0 %n (>= 1.0.0-1)
   <<
-#  DocFiles: ReadMe ReleaseNotes INSTALL
+ DocFiles: aquaterm/ReadMe aquaterm/ReleaseNotes aquaterm/INSTALL
 <<
 SplitOff2: <<
   Package: %N-dev
@@ -44,9 +41,9 @@ SplitOff2: <<
   Depends: %N-shlibs (= %v-%r)
   Replaces: %N (<= 1.0-1)
   Files: include lib/libaquaterm.dylib share/%N
-  #DocFiles: ReadMe ReleaseNotes INSTALL
+  DocFiles: aquaterm/ReadMe aquaterm/ReleaseNotes aquaterm/INSTALL
 <<
-#DocFiles: ReadMe ReleaseNotes INSTALL Help/*.html
+DocFiles: aquaterm/ReadMe aquaterm/ReleaseNotes aquaterm/INSTALL aquaterm/Help/*.html
 License: OSI-Approved
 Description: Displays vector graphics in Aqua
 DescPackaging: <<
