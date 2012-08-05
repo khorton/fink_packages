@@ -1,6 +1,6 @@
 Package: cadabra
-Version: 1.26
-Revision: 2
+Version: 1.31
+Revision: 1
 Description: Computer algebra system for field theory
 License: GPL
 Maintainer: Kevin Horton <khorton01@rogers.com>
@@ -28,7 +28,7 @@ BuildDepends: <<
 
 # Unpack Phase:
 Source: http://www.aei.mpg.de/~peekas/cadabra/cadabra-%v.tar.gz
-Source-MD5: 879c85c883ae822f05866cc2cfb0b344
+Source-MD5: 8c55b1066e326d443b7f09f3bf511be3
 
 # Patch Phase:
 PatchScript: perl -pi -e 's|texmf|texmf-local|' gui/Makefile.in; perl -pi -e 's|-Wl,-dead_strip_dylibs| |' src/Makefile.in; perl -pi -e 's|maxima.res||' tests/Makefile.in; perl -pi -e 's|powers.res||' tests/Makefile.in
