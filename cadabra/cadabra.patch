@@ -1,0 +1,11 @@
+diff -urN cadabra-1.32/src/modules/convert.hh cadabra-1.32_mod/src/modules/convert.hh
+--- cadabra-1.32/src/modules/convert.hh	2012-05-11 03:21:54.000000000 -0400
++++ cadabra-1.32_mod/src/modules/convert.hh	2012-08-07 20:43:57.000000000 -0400
+@@ -18,6 +18,7 @@
+ 
+  */
+ 
++#include <cstddef>
+ #ifndef convert_hh_
+ #define convert_hh_
+ 
