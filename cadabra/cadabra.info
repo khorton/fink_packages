@@ -13,8 +13,7 @@ Depends: <<
   pango1-xft2-ft219-shlibs (>= 1.18.4-4), atk1-shlibs (>= 1.20.0-1),
   glibmm2.4-shlibs (>= 2.13.9-1), breqn | texlive-base, applesystemfonts, 
   gnome-icon-theme (>= 2.20.0-1), modglue-shlibs, glib2-shlibs (>= 2.14.0-1), 
-  libgettext8-shlibs, libiconv, pangomm1.4.1-shlibs (>= 2.14.0-1), 
-  gcc47-shlibs
+  libgettext8-shlibs, libiconv, pangomm1.4.1-shlibs (>= 2.14.0-1)
 <<
 BuildDepends: <<
   breqn | texlive-base, cairo (>= 1.6-1), cairomm1 (>= 1.2-1), expat1, 
@@ -24,8 +23,7 @@ BuildDepends: <<
   libsigc++2 (>= 2.0.17-1001), glib2-dev (>= 2.14.0-1), 
   pango1-xft2-ft219-dev (>= 1.18.4-4), pixman (>= 0.10.0-1), atk1 (>= 1.20.0-1),
   glibmm2.4-dev (>= 2.13.9-1), libgettext8-dev, libiconv-dev, 
-  gtkmm2.4-gtk-dev (>= 2.14.3-1), pangomm1.4.1 (>= 2.14.0-1), 
-  gcc47
+  gtkmm2.4-gtk-dev (>= 2.14.3-1), pangomm1.4.1 (>= 2.14.0-1)
 <<
 
 # Unpack Phase:
@@ -35,18 +33,18 @@ Source-MD5: af5ab0dbdfc441696dc5d4d6205b01bb
 # Patch Phase:
 # PatchFile: %n.patch
 # PatchFile-MD5: 179a8a2ed7ced1735291ee2572392856
-PatchScript: <<
+# PatchScript: <<
   # patch -p1 < %{PatchFile}
-  perl -pi -e 's|texmf|texmf-local|' gui/Makefile.in; perl -pi -e 's|-Wl,-dead_strip_dylibs| |' src/Makefile.in; perl -pi -e 's|maxima.res||' tests/Makefile.in; perl -pi -e 's|powers.res||' tests/Makefile.in
-<<
-# PatchScript: perl -pi -e 's|texmf|texmf-local|' gui/Makefile.in; perl -pi -e 's|maxima.res||' tests/Makefile.in; perl -pi -e 's|powers.res||' tests/Makefile.in
+  # perl -pi -e 's|texmf|texmf-local|' gui/Makefile.in; perl -pi -e 's|-Wl,-dead_strip_dylibs| |' src/Makefile.in; perl -pi -e 's|maxima.res||' tests/Makefile.in; perl -pi -e 's|powers.res||' tests/Makefile.in
+# <<
+PatchScript: perl -pi -e 's|texmf|texmf-local|' gui/Makefile.in; perl -pi -e 's|maxima.res||' tests/Makefile.in; perl -pi -e 's|powers.res||' tests/Makefile.in
 
 # Compile Phase:
 GCC: 4.0
 # SetCXX: g++-fsf-4.7
 # SetCXX: c++
-SetCXX: g++-fsf-4.7
-SetCC: gcc-fsf-4.7
+# SetCXX: g++-fsf-4.7
+# SetCC: gcc-fsf-4.7
 NoSetMAKEFLAGS: true
 SetMAKEFLAGS: -j1
 ConfigureParams: --disable-dependency-tracking
@@ -59,9 +57,9 @@ CompileScript: <<
   export LDFLAGS="-L%p/lib/pango-ft219/lib -L%p/lib/freetype219/lib -L%p/lib/fontconfig2/lib -L%p/lib"
   export PKG_CONFIG_PATH="%p/lib/pango-ft219/lib/pkgconfig:%p/lib/fontconfig2/lib/pkgconfig:%p/lib/freetype219/lib/pkgconfig:$PKG_CONFIG_PATH"
   export FREETYPE_CONFIG=%p/lib/freetype219/bin/freetype-config
-  export CXXCPP=%p/bin/cpp-fsf-4.7
-  export CC=%p/bin/gcc-fsf-4.7
-  if [ -f %p/bin/mktexlsr ]; then mktexlsr %p/etc/texmf.local; fi
+  # export CXXCPP=%p/bin/cpp-fsf-4.7
+  # export CC=%p/bin/gcc-fsf-4.7
+  # if [ -f %p/bin/mktexlsr ]; then mktexlsr %p/etc/texmf.local; fi
   ./configure %c
   make
 <<
