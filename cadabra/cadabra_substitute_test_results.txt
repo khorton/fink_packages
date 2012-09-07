@@ -1,0 +1,233 @@
+Cadabra 1.32 (built on iMac.local Fri Sep 7 05:28:54 EDT 2012)
+Copyright (C) 2001-2011  Kasper Peeters <kasper.peeters@aei.mpg.de>
+Info at http://cadabra.phi-sci.com/
+Available under the terms of the GNU General Public License.
+
+Opening "/tmp/cdbtmp_GvR8VC" ...
+>>>>>>>Assigning list property Indices to $\{d1, d2, d3, d4, m, n, p, r\}$.
+
+>>obj1:= a_{m} b_{n} + c_{r} b_{r} d_{m n};
+>obj1:= a_{m} (c_{n d2 d1} A^{d2 d1} + c_{n}) + c_{r} (c_{r d1 d2} A^{d1 d2} + c_{r}) d_{m n};
+>obj1:= a_{m} c_{n d2 d1} A^{d2 d1} + a_{m} c_{n} + c_{r} c_{r d1 d2} A^{d1 d2} d_{m n} + c_{r} c_{r} d_{m n};
+>>>>tst1:= a_{m} c_{n d2 d1} A^{d2 d1} + a_{m} c_{n} + c_{r} c_{r d1 d2} A^{d1 d2} d_{m n} + c_{r} c_{r} d_{m n} - a_{m} c_{n d2 d1} A^{d2 d1} - a_{m} c_{n} - c_{r} c_{r d1 d2} A^{d1 d2} d_{m n} - c_{r} c_{r} d_{m n};
+>tst1:= 0;
+>Assert check passed.
+@assert: not applicable.
+tst1:= 0;
+>>All expressions and object properties erased.
+>Assigning property Distributable to $#$.
+
+Assigning property IndexInherit to $#$.
+
+Assigning property CommutingAsProduct to $#$.
+
+Assigning property DependsInherit to $#$.
+
+Assigning property WeightInherit to $#$.
+
+Assigning property NumericalFlat to $#$.
+
+Assigning property CommutingAsSum to $#$.
+
+Assigning property DependsInherit to $#$.
+
+Assigning property IndexInherit to $#$.
+
+Assigning property WeightInherit to $#$.
+
+Assigning property DependsInherit to $#**{(#)$(Distributable)}$.
+
+Assigning property Distributable to $(#)$.
+
+Assigning property IndexInherit to $(#)$.
+
+Assigning property IndexInherit to $\commutator{#}{\commutator{#}{Derivative}}$.
+
+Assigning property Derivative to $\commutator{#}{\anticommutator{#}{IndexInherit}}$.
+
+Assigning property IndexInherit to $\anticommutator{#}{\anticommutator{#}{Derivative}}$.
+
+Assigning property Derivative to $\anticommutator{#}{\asymimplicit}$.
+
+>Assigning list property Indices to $\{a, b, c\}$.
+
+>1:= A_{a};
+>1:= B_{a b} C_{b};
+>>>>All expressions and object properties erased.
+>Assigning property Distributable to $#$.
+
+Assigning property IndexInherit to $#$.
+
+Assigning property CommutingAsProduct to $#$.
+
+Assigning property DependsInherit to $#$.
+
+Assigning property WeightInherit to $#$.
+
+Assigning property NumericalFlat to $#$.
+
+Assigning property CommutingAsSum to $#$.
+
+Assigning property DependsInherit to $#$.
+
+Assigning property IndexInherit to $#$.
+
+Assigning property WeightInherit to $#$.
+
+Assigning property DependsInherit to $#**{(#)$(Distributable)}$.
+
+Assigning property Distributable to $(#)$.
+
+Assigning property IndexInherit to $(#)$.
+
+Assigning property IndexInherit to $\commutator{#}{\commutator{#}{Derivative}}$.
+
+Assigning property Derivative to $\commutator{#}{\anticommutator{#}{IndexInherit}}$.
+
+Assigning property IndexInherit to $\anticommutator{#}{\anticommutator{#}{Derivative}}$.
+
+Assigning property Derivative to $\anticommutator{#}{\asymimplicit}$.
+
+1:= #;
+>Assigning list property Indices to $\{d1, d2, d3, d4, m, n, p, r, s, t, a, b\}$.
+
+>obj2:= a_{m n} q e b_{m p} o + d_{n p};
+>obj2:= c_{n p} q e o + d_{n p};
+>tst2:= c_{n p} q e o + d_{n p} - c_{n p} q e o - d_{n p};
+>tst2:= 0;
+>Assert check passed.
+@assert: not applicable.
+tst2:= 0;
+>>>>>obj3:= A_{m n} B_{m n} k1_{a} k1_{a} k2_{b};
+>obj3:= 0;
+>Assert check passed.
+@assert: not applicable.
+obj3:= 0;
+>>>>>obj4:= A_{m} A_{n} + B_{m} C_{n} + D_{m n} A_{p} A_{p};
+>obj4:= A_{m} A_{n} + B_{m} C_{n} + D_{m n} q;
+>tst4:= A_{m} A_{n} + B_{m} C_{n} + D_{m n} q - A_{m} A_{n} - B_{m} C_{n} - D_{m n} q;
+>tst4:= 0;
+>Assert check passed.
+@assert: not applicable.
+tst4:= 0;
+>>>>>obj5:= A_{m m} + A_{m n} B_{m n};
+>obj5:= q + A_{m n} B_{m n};
+>tst5:= q + A_{m n} B_{m n} - q - A_{m n} B_{m n};
+>tst5:= 0;
+>Assert check passed.
+@assert: not applicable.
+tst5:= 0;
+>>>>>tst6:= \zeta_{a b} k1_{d} k1_{a};
+>tst6:= 0;
+>Assert check passed.
+@assert: not applicable.
+tst6:= 0;
+>>tst7:= k_{a} k_{b} k_{c} k_{b} k_{d};
+>tst7:= 0;
+>Assert check passed.
+@assert: not applicable.
+tst7:= 0;
+>>>All expressions and object properties erased.
+>Assigning property Distributable to $#$.
+
+Assigning property IndexInherit to $#$.
+
+Assigning property CommutingAsProduct to $#$.
+
+Assigning property DependsInherit to $#$.
+
+Assigning property WeightInherit to $#$.
+
+Assigning property NumericalFlat to $#$.
+
+Assigning property CommutingAsSum to $#$.
+
+Assigning property DependsInherit to $#$.
+
+Assigning property IndexInherit to $#$.
+
+Assigning property WeightInherit to $#$.
+
+Assigning property DependsInherit to $#**{(#)$(Distributable)}$.
+
+Assigning property Distributable to $(#)$.
+
+Assigning property IndexInherit to $(#)$.
+
+Assigning property IndexInherit to $\commutator{#}{\commutator{#}{Derivative}}$.
+
+Assigning property Derivative to $\commutator{#}{\anticommutator{#}{IndexInherit}}$.
+
+Assigning property IndexInherit to $\anticommutator{#}{\anticommutator{#}{Derivative}}$.
+
+Assigning property Derivative to $\anticommutator{#}{\asymimplicit}$.
+
+1:= #;
+>Assigning list property Indices to $\{d1, d2, d3, d4, m, n, p, r\}$.
+
+>obj8:= W_{r1 r2 s1 s2} W_{r3 s3 r4 s4};
+>obj8:= (1/4 k_{r1} k_{s1} zeta_{r2 s2} - 1/4 k_{r1} k_{s2} zeta_{r2 s1} - 1/4 k_{r2} k_{s1} zeta_{r1 s2} + 1/4 k_{r2} k_{s2} zeta_{r1 s1}) (1/4 k_{r3} k_{r4} zeta_{s3 s4} - 1/4 k_{r3} k_{s4} zeta_{s3 r4} - 1/4 k_{s3} k_{r4} zeta_{r3 s4} + 1/4 k_{s3} k_{s4} zeta_{r3 r4});
+>>>>>>>>tst8:= (1/4 k_{r1} k_{s1} zeta_{r2 s2} - 1/4 k_{r1} k_{s2} zeta_{r2 s1} - 1/4 k_{r2} k_{s1} zeta_{r1 s2} + 1/4 k_{r2} k_{s2} zeta_{r1 s1}) (1/4 k_{r3} k_{r4} zeta_{s3 s4} - 1/4 k_{r3} k_{s4} zeta_{s3 r4} - 1/4 k_{s3} k_{r4} zeta_{r3 s4} + 1/4 k_{s3} k_{s4} zeta_{r3 r4}) - (1/4 k_{r1} k_{s1} zeta_{r2 s2} - 1/4 k_{r1} k_{s2} zeta_{r2 s1} - 1/4 k_{r2} k_{s1} zeta_{r1 s2} + 1/4 k_{r2} k_{s2} zeta_{r1 s1}) (1/4 k_{r3} k_{r4} zeta_{s3 s4} - 1/4 k_{r3} k_{s4} zeta_{s3 r4} - 1/4 k_{s3} k_{r4} zeta_{r3 s4} + 1/4 k_{s3} k_{s4} zeta_{r3 r4});
+>tst8:= 1/16 k_{r1} k_{s1} zeta_{r2 s2} k_{r3} k_{r4} zeta_{s3 s4} - 1/16 k_{r1} k_{s1} zeta_{r2 s2} k_{r3} k_{s4} zeta_{s3 r4} - 1/16 k_{r1} k_{s1} zeta_{r2 s2} k_{s3} k_{r4} zeta_{r3 s4} + 1/16 k_{r1} k_{s1} zeta_{r2 s2} k_{s3} k_{s4} zeta_{r3 r4} - 1/16 k_{r1} k_{s2} zeta_{r2 s1} k_{r3} k_{r4} zeta_{s3 s4} + 1/16 k_{r1} k_{s2} zeta_{r2 s1} k_{r3} k_{s4} zeta_{s3 r4} + 1/16 k_{r1} k_{s2} zeta_{r2 s1} k_{s3} k_{r4} zeta_{r3 s4} - 1/16 k_{r1} k_{s2} zeta_{r2 s1} k_{s3} k_{s4} zeta_{r3 r4} - 1/16 k_{r2} k_{s1} zeta_{r1 s2} k_{r3} k_{r4} zeta_{s3 s4} + 1/16 k_{r2} k_{s1} zeta_{r1 s2} k_{r3} k_{s4} zeta_{s3 r4} + 1/16 k_{r2} k_{s1} zeta_{r1 s2} k_{s3} k_{r4} zeta_{r3 s4} - 1/16 k_{r2} k_{s1} zeta_{r1 s2} k_{s3} k_{s4} zeta_{r3 r4} + 1/16 k_{r2} k_{s2} zeta_{r1 s1} k_{r3} k_{r4} zeta_{s3 s4} - 1/16 k_{r2} k_{s2} zeta_{r1 s1} k_{r3} k_{s4} zeta_{s3 r4} - 1/16 k_{r2} k_{s2} zeta_{r1 s1} k_{s3} k_{r4} zeta_{r3 s4} + 1/16 k_{r2} k_{s2} zeta_{r1 s1} k_{s3} k_{s4} zeta_{r3 r4} - 1/16 k_{r1} k_{s1} zeta_{r2 s2} k_{r3} k_{r4} zeta_{s3 s4} + 1/16 k_{r1} k_{s1} zeta_{r2 s2} k_{r3} k_{s4} zeta_{s3 r4} + 1/16 k_{r1} k_{s1} zeta_{r2 s2} k_{s3} k_{r4} zeta_{r3 s4} - 1/16 k_{r1} k_{s1} zeta_{r2 s2} k_{s3} k_{s4} zeta_{r3 r4} + 1/16 k_{r1} k_{s2} zeta_{r2 s1} k_{r3} k_{r4} zeta_{s3 s4} - 1/16 k_{r1} k_{s2} zeta_{r2 s1} k_{r3} k_{s4} zeta_{s3 r4} - 1/16 k_{r1} k_{s2} zeta_{r2 s1} k_{s3} k_{r4} zeta_{r3 s4} + 1/16 k_{r1} k_{s2} zeta_{r2 s1} k_{s3} k_{s4} zeta_{r3 r4} + 1/16 k_{r2} k_{s1} zeta_{r1 s2} k_{r3} k_{r4} zeta_{s3 s4} - 1/16 k_{r2} k_{s1} zeta_{r1 s2} k_{r3} k_{s4} zeta_{s3 r4} - 1/16 k_{r2} k_{s1} zeta_{r1 s2} k_{s3} k_{r4} zeta_{r3 s4} + 1/16 k_{r2} k_{s1} zeta_{r1 s2} k_{s3} k_{s4} zeta_{r3 r4} - 1/16 k_{r2} k_{s2} zeta_{r1 s1} k_{r3} k_{r4} zeta_{s3 s4} + 1/16 k_{r2} k_{s2} zeta_{r1 s1} k_{r3} k_{s4} zeta_{s3 r4} + 1/16 k_{r2} k_{s2} zeta_{r1 s1} k_{s3} k_{r4} zeta_{r3 s4} - 1/16 k_{r2} k_{s2} zeta_{r1 s1} k_{s3} k_{s4} zeta_{r3 r4};
+>>Assert check passed.
+@assert: not applicable.
+tst8:= 0;
+>>>>>>obj9:= (1/2 y1 - 1/2 w1);
+>obj9:= (1/2 y1 - 1/2 y1);
+>obj9:= 0;
+>Assert check passed.
+@assert: not applicable.
+obj9:= 0;
+>>obj10:= (1/2 a y1 - 1/2 a w1);
+>obj10:= (1/2 a y1 - 1/2 a y1);
+>obj10:= 0;
+>Assert check passed.
+@assert: not applicable.
+obj10:= 0;
+>>obj11:= (1/6 y1 - 1/2 w1);
+>obj11:= (1/6 y1 - 1/6 y1);
+>obj11:= 0;
+>Assert check passed.
+@assert: not applicable.
+obj11:= 0;
+>>>>>>>>All expressions and object properties erased.
+>Assigning property Distributable to $#$.
+
+Assigning property IndexInherit to $#$.
+
+Assigning property CommutingAsProduct to $#$.
+
+Assigning property DependsInherit to $#$.
+
+Assigning property WeightInherit to $#$.
+
+Assigning property NumericalFlat to $#$.
+
+Assigning property CommutingAsSum to $#$.
+
+Assigning property DependsInherit to $#$.
+
+Assigning property IndexInherit to $#$.
+
+Assigning property WeightInherit to $#$.
+
+Assigning property DependsInherit to $#**{(#)$(Distributable)}$.
+
+Assigning property Distributable to $(#)$.
+
+Assigning property IndexInherit to $(#)$.
+
+Assigning property IndexInherit to $\commutator{#}{\commutator{#}{Derivative}}$.
+
+Assigning property Derivative to $\commutator{#}{\anticommutator{#}{IndexInherit}}$.
+
+Assigning property IndexInherit to $\anticommutator{#}{\anticommutator{#}{Derivative}}$.
+
+Assigning property Derivative to $\anticommutator{#}{\asymimplicit}$.
+
+1:= #;
+>Assigning list property Indices to $\{a, b, c, d, m, n, q, r, d1, d2, d3, d4\}$.
+
+>Assigning property RiemannTensor to $R_{a b c d}$.
+
+>>
