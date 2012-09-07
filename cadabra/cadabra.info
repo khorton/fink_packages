@@ -7,7 +7,7 @@ Maintainer: Kevin Horton <khorton01@rogers.com>
 
 # Dependencies:
 Depends: <<
-  qt3-shlibs, lie, gtk+2-shlibs (>= 2.12.0-1), 
+  qt3-shlibs, lie, texmacs, gtk+2-shlibs (>= 2.12.0-1), 
   libpcre1-shlibs (>= 7.6-2), x11-shlibs, gmp5-shlibs, libgmpxx5-shlibs,  
   libsigc++2-shlibs, gtkmm2.4-shlibs (>= 2.14.3-1),
   pango1-xft2-ft219-shlibs (>= 1.18.4-4), atk1-shlibs (>= 1.20.0-1),
@@ -39,7 +39,8 @@ Source-MD5: af5ab0dbdfc441696dc5d4d6205b01bb
   # patch -p1 < %{PatchFile}
   # perl -pi -e 's|texmf|texmf-local|' gui/Makefile.in; perl -pi -e 's|-Wl,-dead_strip_dylibs| |' src/Makefile.in; perl -pi -e 's|maxima.res||' tests/Makefile.in; perl -pi -e 's|powers.res||' tests/Makefile.in
 # <<
-PatchScript: perl -pi -e 's|texmf|texmf-local|' gui/Makefile.in; perl -pi -e 's|maxima.res||' tests/Makefile.in; perl -pi -e 's|powers.res||' tests/Makefile.in
+PatchScript: perl -pi -e 's|texmf|texmf-local|' gui/Makefile.in; perl -pi -e 's|-Wl,-dead_strip_dylibs| |' src/Makefile.in; perl -pi -e 's|maxima.res||' tests/Makefile.in; perl -pi -e 's|powers.res||' tests/Makefile.in
+# PatchScript: perl -pi -e 's|texmf|texmf-local|' gui/Makefile.in; perl -pi -e 's|maxima.res||' tests/Makefile.in; perl -pi -e 's|powers.res||' tests/Makefile.in
 
 # Compile Phase:
 GCC: 4.0
@@ -63,7 +64,7 @@ CompileScript: <<
   export FREETYPE_CONFIG=%p/lib/freetype219/bin/freetype-config
   # export CXXCPP=%p/bin/cpp-fsf-4.7
   # export CC=%p/bin/gcc-fsf-4.7
-  # if [ -f %p/bin/mktexlsr ]; then mktexlsr %p/etc/texmf.local; fi
+  if [ -f %p/bin/mktexlsr ]; then mktexlsr %p/etc/texmf.local; fi
   ./configure %c
   make
 <<
@@ -71,7 +72,7 @@ CompileScript: <<
 DocFiles: AUTHORS ChangeLog COPYING
 InstallScript: << 
   make -j1 install DESTDIR=%d DEVDESTDIR=%d
-  # /bin/rm -fr %i/share/TeXmacs
+  /bin/rm -fr %i/share/TeXmacs
   /bin/mkdir -m 777 -p %i/share/doc/%n/examples
   /bin/cp -PR %b/examples/* %i/share/doc/%n/examples
   /bin/mkdir %i/share/doc/%n/doc
@@ -80,8 +81,8 @@ InstallScript: <<
   /bin/cp -PR %b/html/* %i/share/doc/%n/html
   /bin/mkdir %i/share/doc/%n/bugs
   /bin/cp -PR %b/bugs/* %i/share/doc/%n/bugs
-  # /bin/mkdir %i/share/doc/%n/texmacs
-  # /bin/cp -PR %b/texmacs/* %i/share/doc/%n/texmacs
+  /bin/mkdir %i/share/doc/%n/texmacs
+  /bin/cp -PR %b/texmacs/* %i/share/doc/%n/texmacs
   /bin/mkdir -p %i/etc
   /bin/mv %i/share/texmf-local %i/etc/texmf.local
   # /bin/mv %i/share/texmf/tex/latex/cadabra/cadabra.sty %i/etc/texmf.local/tex/latex/cadabra/cadabra.sty
