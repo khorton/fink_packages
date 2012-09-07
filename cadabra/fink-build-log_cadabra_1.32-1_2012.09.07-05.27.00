@@ -1,0 +1,746 @@
+Setting runtime build-lock...
+dpkg-deb -b /sw/src/fink.build/root-fink-buildlock-cadabra-1.32-1 /sw/src/fink.build
+dpkg-deb: building package `fink-buildlock-cadabra-1.32-1' in `/sw/src/fink.build/fink-buildlock-cadabra-1.32-1_2012.09.07-05.27.00_darwin-x86_64.deb'.
+Installing build-lock package...
+/sw/bin/dpkg-lockwait -i /sw/src/fink.build/fink-buildlock-cadabra-1.32-1_2012.09.07-05.27.00_darwin-x86_64.deb
+Selecting previously deselected package fink-buildlock-cadabra-1.32-1.
+(Reading database ... 247044 files and directories currently installed.)
+Unpacking fink-buildlock-cadabra-1.32-1 (from .../fink-buildlock-cadabra-1.32-1_2012.09.07-05.27.00_darwin-x86_64.deb) ...
+Setting up fink-buildlock-cadabra-1.32-1 (2012.09.07-05.27.00) ...
+
+sudo -u fink-bld [ENV] sh -c /tmp/fink.xgreS
+/sw/bin/tar  --no-same-owner --no-same-permissions -xvf /sw/src/cadabra-1.32.tar.gz
+cadabra-1.32/
+cadabra-1.32/.ditz-config
+cadabra-1.32/.gitignore
+cadabra-1.32/AUTHORS
+cadabra-1.32/COPYING
+cadabra-1.32/ChangeLog
+cadabra-1.32/INSTALL
+cadabra-1.32/Makefile.in
+cadabra-1.32/bugs/
+cadabra-1.32/bugs/issue-0129edd57e7b9ea4932040eeb5d1ba7e83a939db.yaml
+cadabra-1.32/bugs/issue-0180195bb345a1d9168742e86b5f9edd57c33937.yaml
+cadabra-1.32/bugs/issue-0e5c24e6c9013074288544cc99023cb7674fef2f.yaml
+cadabra-1.32/bugs/issue-1040b3b57b849b9b2cc8fee189ecb0df52544a75.yaml
+cadabra-1.32/bugs/issue-15e3e1b9b66a3841c79e43937e91a0f2ada5ae2b.yaml
+cadabra-1.32/bugs/issue-16b3dc7c2f7508a10da63f93e3407730a757908e.yaml
+cadabra-1.32/bugs/issue-1c7bc5e7512020226c1ca90fb249cab7886b6833.yaml
+cadabra-1.32/bugs/issue-1e849154a481bf8a79a06066d104b26efba56381.yaml
+cadabra-1.32/bugs/issue-21fdb7347ae291cf9d98ff53c123057a20a0521d.yaml
+cadabra-1.32/bugs/issue-2482679b6ec55d83b3f1c431bd7c31047dde8221.yaml
+cadabra-1.32/bugs/issue-248630fcbe40bd59f52429e99de2b43488b5e8b8.yaml
+cadabra-1.32/bugs/issue-26a1e390e3639bfcd4eff412054f29beb796a5d3.yaml
+cadabra-1.32/bugs/issue-275e6042623fde84879a0c1864f064559562ed3c.yaml
+cadabra-1.32/bugs/issue-2c1e76aeb0f5cf8011ea0bb399c5411e35a1b1e7.yaml
+cadabra-1.32/bugs/issue-37d2a9206418dbc66533d3b658d17e4ffb5d8ed2.yaml
+cadabra-1.32/bugs/issue-38650fc2470a22a6ab2e76ff1b7ebd1f336fa76d.yaml
+cadabra-1.32/bugs/issue-38a7e972acdc3b14543563da04b16b3968730129.yaml
+cadabra-1.32/bugs/issue-3a0fb777111329baf741dde7dc04fd19ea4885d6.yaml
+cadabra-1.32/bugs/issue-4db2db8287019b302eafd70dda2d8cdb818f669b.yaml
+cadabra-1.32/bugs/issue-4dce789d9676fe7d510b0489a82f68ce21749c73.yaml
+cadabra-1.32/bugs/issue-54b0e71bcc140a8f760bc9835bb6cea84677e76f.yaml
+cadabra-1.32/bugs/issue-583a97dcb71402c9fe6a61f48b4847de22c23900.yaml
+cadabra-1.32/bugs/issue-5c264626947a0e6a9f8b454746ecf7a017f429d0.yaml
+cadabra-1.32/bugs/issue-67f410348cb3e122b6f7541db7fccddb3cc08e9e.yaml
+cadabra-1.32/bugs/issue-6d586ba4d2e7946ba48f17966355b36375e63b8f.yaml
+cadabra-1.32/bugs/issue-871645e20be95eb7b7441170c49d375d770570a0.yaml
+cadabra-1.32/bugs/issue-88b4ab8f3d8dc4314f47c31b2f9c11a050884367.yaml
+cadabra-1.32/bugs/issue-8e86307cac2cf8eb3cf538213e29e428da7cbc1b.yaml
+cadabra-1.32/bugs/issue-9258c825583707f6bf901795c9d4e2a82f13e0d3.yaml
+cadabra-1.32/bugs/issue-96cc2f197c8a31e580777b96155261bdb581005c.yaml
+cadabra-1.32/bugs/issue-9bc33d2ce36bc0dd67c03d09cc1c2ab5e9eba099.yaml
+cadabra-1.32/bugs/issue-9c8f132023a13bdea10ef87e26d37d681705a8d1.yaml
+cadabra-1.32/bugs/issue-a2bec73e247cc89c7cfca20ee457e5295de9475e.yaml
+cadabra-1.32/bugs/issue-a581c29d3f2a279c34df52be8f4b8761dabc18fa.yaml
+cadabra-1.32/bugs/issue-a7f3c6de890010983ccd353a949975bd1b4f66b3.yaml
+cadabra-1.32/bugs/issue-ada88ddc28be6f0f3567fc2d0f50fb3dc64a37b4.yaml
+cadabra-1.32/bugs/issue-b5dc914a9876677a3e1059466fd741fb4d2ab336.yaml
+cadabra-1.32/bugs/issue-b5f5ed9ac93dd64deddecc606872e6a00009d6be.yaml
+cadabra-1.32/bugs/issue-b992ba2a0e28143cf1a66c11a8c4284df71bad33.yaml
+cadabra-1.32/bugs/issue-becb40c03914860dbc07ef30bb8fb898a9089a73.yaml
+cadabra-1.32/bugs/issue-bfc91ba71877919c193cd0b819c17f1d824c29af.yaml
+cadabra-1.32/bugs/issue-c4a905e70880ee7899a345ab60a3b86949ff8eae.yaml
+cadabra-1.32/bugs/issue-c66379cdeaac99c6fb531fb9cb23421ac551c43a.yaml
+cadabra-1.32/bugs/issue-c6f19ea6617d8186461181296226988ae7111708.yaml
+cadabra-1.32/bugs/issue-ca0ea385450a3a152cc01829d27cb86d945aca1d.yaml
+cadabra-1.32/bugs/issue-d011324da77bbe55d7724d5d0fa87354ee15b87d.yaml
+cadabra-1.32/bugs/issue-d3968c05090854806ec986d696e99a887d458b18.yaml
+cadabra-1.32/bugs/issue-d96ff69906114cf2e375be83d1679277743d6bec.yaml
+cadabra-1.32/bugs/issue-db24f3c504a41ef2463fe34416341f4550b9ed9e.yaml
+cadabra-1.32/bugs/issue-db53ba8697972d02ee83a31fb26a798f4ef0a7d0.yaml
+cadabra-1.32/bugs/issue-dcc4c5a2bbebd03459ee53b5ebbc6132fe4f560d.yaml
+cadabra-1.32/bugs/issue-df1fa81e6c1c2d90a3b0ff531a9696ace2a12de3.yaml
+cadabra-1.32/bugs/issue-e21ce60551528df4aaf0b0226544cd0a2f278e96.yaml
+cadabra-1.32/bugs/issue-e265d6222f658da087b232a55d9aa05122a523a7.yaml
+cadabra-1.32/bugs/issue-f2ada64adc88a3b4014456bc2d50863f242a1f12.yaml
+cadabra-1.32/bugs/issue-f51b33b59746c10c94e4beb0dc06977dec195e7c.yaml
+cadabra-1.32/bugs/issue-f896ffe43c8b780b98fde4d37b71d683af775a99.yaml
+cadabra-1.32/bugs/project.yaml
+cadabra-1.32/cadabra.desktop
+cadabra-1.32/cadabra.png
+cadabra-1.32/cadabra.svg
+cadabra-1.32/configure
+cadabra-1.32/configure.in
+cadabra-1.32/doc/
+cadabra-1.32/doc/ChangeLog
+cadabra-1.32/doc/Makefile
+cadabra-1.32/doc/Makefile.in
+cadabra-1.32/doc/algorithms/
+cadabra-1.32/doc/algorithms/acanonicalorder.tex
+cadabra-1.32/doc/algorithms/algorithms.tex
+cadabra-1.32/doc/algorithms/all_contractions.tex
+cadabra-1.32/doc/algorithms/amnesia.tex
+cadabra-1.32/doc/algorithms/assert.tex
+cadabra-1.32/doc/algorithms/asym.tex
+cadabra-1.32/doc/algorithms/asymprop.tex
+cadabra-1.32/doc/algorithms/breakgendelta.tex
+cadabra-1.32/doc/algorithms/canonicalise.tex
+cadabra-1.32/doc/algorithms/canonicalorder.tex
+cadabra-1.32/doc/algorithms/coefficients.tex
+cadabra-1.32/doc/algorithms/collect_factors.tex
+cadabra-1.32/doc/algorithms/collect_terms.tex
+cadabra-1.32/doc/algorithms/combine.tex
+cadabra-1.32/doc/algorithms/decompose.tex
+cadabra-1.32/doc/algorithms/decompose_product.tex
+cadabra-1.32/doc/algorithms/depprint.tex
+cadabra-1.32/doc/algorithms/distribute.tex
+cadabra-1.32/doc/algorithms/drop_weight.tex
+cadabra-1.32/doc/algorithms/dualise_tensor.tex
+cadabra-1.32/doc/algorithms/einsteinify.tex
+cadabra-1.32/doc/algorithms/eliminate_kr.tex
+cadabra-1.32/doc/algorithms/eliminate_metric.tex
+cadabra-1.32/doc/algorithms/eliminate_vielbein.tex
+cadabra-1.32/doc/algorithms/eliminateeps.tex
+cadabra-1.32/doc/algorithms/end.tex
+cadabra-1.32/doc/algorithms/epsprod2gendelta.tex
+cadabra-1.32/doc/algorithms/eqs.tex
+cadabra-1.32/doc/algorithms/expand.tex
+cadabra-1.32/doc/algorithms/expand_power.tex
+cadabra-1.32/doc/algorithms/expand_product_shorthand.tex
+cadabra-1.32/doc/algorithms/factor_in.tex
+cadabra-1.32/doc/algorithms/factor_out.tex
+cadabra-1.32/doc/algorithms/factorise.tex
+cadabra-1.32/doc/algorithms/fierz.tex
+cadabra-1.32/doc/algorithms/gammasplit.tex
+cadabra-1.32/doc/algorithms/impose_asym.tex
+cadabra-1.32/doc/algorithms/impose_bianchi.tex
+cadabra-1.32/doc/algorithms/index_rename.tex
+cadabra-1.32/doc/algorithms/indexlist.tex
+cadabra-1.32/doc/algorithms/indexsort.tex
+cadabra-1.32/doc/algorithms/inner.tex
+cadabra-1.32/doc/algorithms/join.tex
+cadabra-1.32/doc/algorithms/keep_terms.tex
+cadabra-1.32/doc/algorithms/keep_weight.tex
+cadabra-1.32/doc/algorithms/length.tex
+cadabra-1.32/doc/algorithms/list_sum.tex
+cadabra-1.32/doc/algorithms/listflatten.tex
+cadabra-1.32/doc/algorithms/lr_tensor.tex
+cadabra-1.32/doc/algorithms/lsolve.tex
+cadabra-1.32/doc/algorithms/maple.tex
+cadabra-1.32/doc/algorithms/maxima.tex
+cadabra-1.32/doc/algorithms/mem.tex
+cadabra-1.32/doc/algorithms/number_of_terms.tex
+cadabra-1.32/doc/algorithms/numerical_flatten.tex
+cadabra-1.32/doc/algorithms/output_format.tex
+cadabra-1.32/doc/algorithms/permute.tex
+cadabra-1.32/doc/algorithms/pintegrate.tex
+cadabra-1.32/doc/algorithms/pop.tex
+cadabra-1.32/doc/algorithms/print.tex
+cadabra-1.32/doc/algorithms/print_status.tex
+cadabra-1.32/doc/algorithms/prodcollectnum.tex
+cadabra-1.32/doc/algorithms/prodflatten.tex
+cadabra-1.32/doc/algorithms/prodrule.tex
+cadabra-1.32/doc/algorithms/prodsort.tex
+cadabra-1.32/doc/algorithms/product_shorthand.tex
+cadabra-1.32/doc/algorithms/projweyl.tex
+cadabra-1.32/doc/algorithms/properties.tex
+cadabra-1.32/doc/algorithms/proplist.tex
+cadabra-1.32/doc/algorithms/quit.tex
+cadabra-1.32/doc/algorithms/range.tex
+cadabra-1.32/doc/algorithms/reduce.tex
+cadabra-1.32/doc/algorithms/reduce_gendelta.tex
+cadabra-1.32/doc/algorithms/remove_indexbracket.tex
+cadabra-1.32/doc/algorithms/remove_weyl_traces.tex
+cadabra-1.32/doc/algorithms/rename_dummies.tex
+cadabra-1.32/doc/algorithms/replace_match.tex
+cadabra-1.32/doc/algorithms/reset.tex
+cadabra-1.32/doc/algorithms/rewrite_diracbar.tex
+cadabra-1.32/doc/algorithms/rewrite_indices.tex
+cadabra-1.32/doc/algorithms/riemann_index_regroup.tex
+cadabra-1.32/doc/algorithms/run.tex
+cadabra-1.32/doc/algorithms/spinorsort.tex
+cadabra-1.32/doc/algorithms/split_index.tex
+cadabra-1.32/doc/algorithms/substitute.tex
+cadabra-1.32/doc/algorithms/sumflatten.tex
+cadabra-1.32/doc/algorithms/sumsort.tex
+cadabra-1.32/doc/algorithms/sym.tex
+cadabra-1.32/doc/algorithms/tabcanonicalise.tex
+cadabra-1.32/doc/algorithms/tabdimension.tex
+cadabra-1.32/doc/algorithms/tabstandardform.tex
+cadabra-1.32/doc/algorithms/take.tex
+cadabra-1.32/doc/algorithms/take_match.tex
+cadabra-1.32/doc/algorithms/timing.tex
+cadabra-1.32/doc/algorithms/tree.tex
+cadabra-1.32/doc/algorithms/unique_indices.tex
+cadabra-1.32/doc/algorithms/unwrap.tex
+cadabra-1.32/doc/algorithms/vary.tex
+cadabra-1.32/doc/algorithms/weyl_index_order.tex
+cadabra-1.32/doc/algorithms/xterm_title.tex
+cadabra-1.32/doc/algorithms/young_project.tex
+cadabra-1.32/doc/algorithms/young_project_product.tex
+cadabra-1.32/doc/algorithms/young_project_tensor.tex
+cadabra-1.32/doc/amazing
+cadabra-1.32/doc/cadabra.sty
+cadabra-1.32/doc/cadabra.tex
+cadabra-1.32/doc/combinatorics.tex
+cadabra-1.32/doc/components.tex
+cadabra-1.32/doc/doxygen_cadabra.config
+cadabra-1.32/doc/doxygen_tree.config
+cadabra-1.32/doc/exp1.eps
+cadabra-1.32/doc/exp1.fig
+cadabra-1.32/doc/exp2.eps
+cadabra-1.32/doc/favicon.ico
+cadabra-1.32/doc/formal.tex
+cadabra-1.32/doc/general.tex
+cadabra-1.32/doc/index.html
+cadabra-1.32/doc/maxima_frontend
+cadabra-1.32/doc/newtree.html
+cadabra-1.32/doc/paper.tex
+cadabra-1.32/doc/properties/
+cadabra-1.32/doc/properties/Accent.tex
+cadabra-1.32/doc/properties/AntiCommuting.tex
+cadabra-1.32/doc/properties/AntiSelfDual.tex
+cadabra-1.32/doc/properties/AntiSymmetric.tex
+cadabra-1.32/doc/properties/Commuting.tex
+cadabra-1.32/doc/properties/CommutingAsProduct.tex
+cadabra-1.32/doc/properties/CommutingAsSum.tex
+cadabra-1.32/doc/properties/Coordinate.tex
+cadabra-1.32/doc/properties/DAntiSymmetric.tex
+cadabra-1.32/doc/properties/Depends.tex
+cadabra-1.32/doc/properties/DependsInherit.tex
+cadabra-1.32/doc/properties/Derivative.tex
+cadabra-1.32/doc/properties/Diagonal.tex
+cadabra-1.32/doc/properties/DiracBar.tex
+cadabra-1.32/doc/properties/Distributable.tex
+cadabra-1.32/doc/properties/EpsilonTensor.tex
+cadabra-1.32/doc/properties/FilledTableau.tex
+cadabra-1.32/doc/properties/GammaMatrix.tex
+cadabra-1.32/doc/properties/GammaTraceless.tex
+cadabra-1.32/doc/properties/ImplicitIndex.tex
+cadabra-1.32/doc/properties/IndexInherit.tex
+cadabra-1.32/doc/properties/Indices.tex
+cadabra-1.32/doc/properties/Integer.tex
+cadabra-1.32/doc/properties/InverseMetric.tex
+cadabra-1.32/doc/properties/InverseVielbein.tex
+cadabra-1.32/doc/properties/KeepHistory.tex
+cadabra-1.32/doc/properties/KroneckerDelta.tex
+cadabra-1.32/doc/properties/LaTeXForm.tex
+cadabra-1.32/doc/properties/Matrix.tex
+cadabra-1.32/doc/properties/Metric.tex
+cadabra-1.32/doc/properties/NonCommuting.tex
+cadabra-1.32/doc/properties/NumericalFlat.tex
+cadabra-1.32/doc/properties/PartialDerivative.tex
+cadabra-1.32/doc/properties/PostDefaultRules.tex
+cadabra-1.32/doc/properties/PreDefaultRules.tex
+cadabra-1.32/doc/properties/PropertyInherit.tex
+cadabra-1.32/doc/properties/RiemannTensor.tex
+cadabra-1.32/doc/properties/SatisfiesBianchi.tex
+cadabra-1.32/doc/properties/SelfAntiCommuting.tex
+cadabra-1.32/doc/properties/SelfCommuting.tex
+cadabra-1.32/doc/properties/SelfDual.tex
+cadabra-1.32/doc/properties/SelfNonCommuting.tex
+cadabra-1.32/doc/properties/SigmaBarMatrix.tex
+cadabra-1.32/doc/properties/SigmaMatrix.tex
+cadabra-1.32/doc/properties/SortOrder.tex
+cadabra-1.32/doc/properties/Spinor.tex
+cadabra-1.32/doc/properties/Symbol.tex
+cadabra-1.32/doc/properties/Symmetric.tex
+cadabra-1.32/doc/properties/Tableau.tex
+cadabra-1.32/doc/properties/TableauSymmetry.tex
+cadabra-1.32/doc/properties/Traceless.tex
+cadabra-1.32/doc/properties/Vielbein.tex
+cadabra-1.32/doc/properties/Weight.tex
+cadabra-1.32/doc/properties/WeightInherit.tex
+cadabra-1.32/doc/properties/WeylTensor.tex
+cadabra-1.32/doc/reserved/
+cadabra-1.32/doc/reserved/anticommutator.tex
+cadabra-1.32/doc/reserved/arrow.tex
+cadabra-1.32/doc/reserved/cdot.tex
+cadabra-1.32/doc/reserved/comma.tex
+cadabra-1.32/doc/reserved/commutator.tex
+cadabra-1.32/doc/reserved/conditional.tex
+cadabra-1.32/doc/reserved/equals.tex
+cadabra-1.32/doc/reserved/expression.tex
+cadabra-1.32/doc/reserved/factorial.tex
+cadabra-1.32/doc/reserved/frac.tex
+cadabra-1.32/doc/reserved/indexbracket.tex
+cadabra-1.32/doc/reserved/infty.tex
+cadabra-1.32/doc/reserved/label.tex
+cadabra-1.32/doc/reserved/pow.tex
+cadabra-1.32/doc/reserved/prod.tex
+cadabra-1.32/doc/reserved/regex.tex
+cadabra-1.32/doc/reserved/sequence.tex
+cadabra-1.32/doc/reserved/sum.tex
+cadabra-1.32/doc/reserved/unequals.tex
+cadabra-1.32/doc/showcase.tex
+cadabra-1.32/doc/tree.html
+cadabra-1.32/doc/tree.tex
+cadabra-1.32/doc/treefig.eps
+cadabra-1.32/doc/treefig.fig
+cadabra-1.32/doc/treefig.pdf
+cadabra-1.32/doc/windows.txt
+cadabra-1.32/doc/xperm.nb
+cadabra-1.32/doc/youngtab++.tex
+cadabra-1.32/examples/
+cadabra-1.32/examples/bianchi_identities.cnb
+cadabra-1.32/examples/fierz.cnb
+cadabra-1.32/examples/maxima.cnb
+cadabra-1.32/examples/maxwell.cnb
+cadabra-1.32/examples/simple_clifford.cnb
+cadabra-1.32/examples/supergravity.cnb
+cadabra-1.32/examples/tutorial3.cnb
+cadabra-1.32/examples/young_tableaux.cnb
+cadabra-1.32/gui/
+cadabra-1.32/gui/Makefile.in
+cadabra-1.32/gui/cadabra.el
+cadabra-1.32/gui/caslink.hh
+cadabra-1.32/gui/help.cc
+cadabra-1.32/gui/help.hh
+cadabra-1.32/gui/main.cc
+cadabra-1.32/gui/mathtex_cpp.pyx
+cadabra-1.32/gui/render.py
+cadabra-1.32/gui/tableaux.sty
+cadabra-1.32/gui/tutorial3.cnb
+cadabra-1.32/gui/widgets.cc
+cadabra-1.32/gui/widgets.hh
+cadabra-1.32/gui/window.cc
+cadabra-1.32/gui/window.hh
+cadabra-1.32/html/
+cadabra-1.32/html/component-cadabra.html
+cadabra-1.32/html/index.html
+cadabra-1.32/html/issue-1040b3b57b849b9b2cc8fee189ecb0df52544a75.html
+cadabra-1.32/html/issue-16b3dc7c2f7508a10da63f93e3407730a757908e.html
+cadabra-1.32/html/issue-1c7bc5e7512020226c1ca90fb249cab7886b6833.html
+cadabra-1.32/html/issue-2482679b6ec55d83b3f1c431bd7c31047dde8221.html
+cadabra-1.32/html/issue-26a1e390e3639bfcd4eff412054f29beb796a5d3.html
+cadabra-1.32/html/issue-2c1e76aeb0f5cf8011ea0bb399c5411e35a1b1e7.html
+cadabra-1.32/html/issue-346b37f904ab241f53474b9142eb559498066598.html
+cadabra-1.32/html/issue-37d2a9206418dbc66533d3b658d17e4ffb5d8ed2.html
+cadabra-1.32/html/issue-38a7e972acdc3b14543563da04b16b3968730129.html
+cadabra-1.32/html/issue-4db2db8287019b302eafd70dda2d8cdb818f669b.html
+cadabra-1.32/html/issue-54b0e71bcc140a8f760bc9835bb6cea84677e76f.html
+cadabra-1.32/html/issue-5c264626947a0e6a9f8b454746ecf7a017f429d0.html
+cadabra-1.32/html/issue-6d586ba4d2e7946ba48f17966355b36375e63b8f.html
+cadabra-1.32/html/issue-871645e20be95eb7b7441170c49d375d770570a0.html
+cadabra-1.32/html/issue-88b4ab8f3d8dc4314f47c31b2f9c11a050884367.html
+cadabra-1.32/html/issue-9258c825583707f6bf901795c9d4e2a82f13e0d3.html
+cadabra-1.32/html/issue-96cc2f197c8a31e580777b96155261bdb581005c.html
+cadabra-1.32/html/issue-9c8f132023a13bdea10ef87e26d37d681705a8d1.html
+cadabra-1.32/html/issue-a2bec73e247cc89c7cfca20ee457e5295de9475e.html
+cadabra-1.32/html/issue-a581c29d3f2a279c34df52be8f4b8761dabc18fa.html
+cadabra-1.32/html/issue-a7f3c6de890010983ccd353a949975bd1b4f66b3.html
+cadabra-1.32/html/issue-ada88ddc28be6f0f3567fc2d0f50fb3dc64a37b4.html
+cadabra-1.32/html/issue-b5dc914a9876677a3e1059466fd741fb4d2ab336.html
+cadabra-1.32/html/issue-b5f5ed9ac93dd64deddecc606872e6a00009d6be.html
+cadabra-1.32/html/issue-c6f19ea6617d8186461181296226988ae7111708.html
+cadabra-1.32/html/issue-ca0ea385450a3a152cc01829d27cb86d945aca1d.html
+cadabra-1.32/html/issue-d3968c05090854806ec986d696e99a887d458b18.html
+cadabra-1.32/html/issue-d96ff69906114cf2e375be83d1679277743d6bec.html
+cadabra-1.32/html/issue-db53ba8697972d02ee83a31fb26a798f4ef0a7d0.html
+cadabra-1.32/html/issue-e21ce60551528df4aaf0b0226544cd0a2f278e96.html
+cadabra-1.32/html/issue-e265d6222f658da087b232a55d9aa05122a523a7.html
+cadabra-1.32/html/issue-f2ada64adc88a3b4014456bc2d50863f242a1f12.html
+cadabra-1.32/html/release-1.15.html
+cadabra-1.32/html/release-1.17.html
+cadabra-1.32/html/release-1.18.html
+cadabra-1.32/html/release-1.21.html
+cadabra-1.32/html/unassigned.html
+cadabra-1.32/install-sh
+cadabra-1.32/man/
+cadabra-1.32/man/man1/
+cadabra-1.32/man/man1/cadabra.1
+cadabra-1.32/man/man1/xcadabra.1
+cadabra-1.32/src/
+cadabra-1.32/src/ChangeLog
+cadabra-1.32/src/Makefile.in
+cadabra-1.32/src/algorithm.cc
+cadabra-1.32/src/algorithm.hh
+cadabra-1.32/src/combinatorics.cc
+cadabra-1.32/src/combinatorics.hh
+cadabra-1.32/src/config.h
+cadabra-1.32/src/config.h.in
+cadabra-1.32/src/defaults.cc
+cadabra-1.32/src/display.cc
+cadabra-1.32/src/display.hh
+cadabra-1.32/src/exchange.cc
+cadabra-1.32/src/exchange.hh
+cadabra-1.32/src/main.cc
+cadabra-1.32/src/manipulator.cc
+cadabra-1.32/src/manipulator.hh
+cadabra-1.32/src/modules/
+cadabra-1.32/src/modules/Makefile.in
+cadabra-1.32/src/modules/algebra.cc
+cadabra-1.32/src/modules/algebra.hh
+cadabra-1.32/src/modules/combinat.cc
+cadabra-1.32/src/modules/combinat.hh
+cadabra-1.32/src/modules/convert.cc
+cadabra-1.32/src/modules/convert.hh
+cadabra-1.32/src/modules/diff_geometry.cc
+cadabra-1.32/src/modules/diff_geometry.hh
+cadabra-1.32/src/modules/dummies.cc
+cadabra-1.32/src/modules/dummies.hh
+cadabra-1.32/src/modules/eval.cc
+cadabra-1.32/src/modules/eval.hh
+cadabra-1.32/src/modules/field_theory.cc
+cadabra-1.32/src/modules/field_theory.hh
+cadabra-1.32/src/modules/gamma.cc
+cadabra-1.32/src/modules/gamma.hh
+cadabra-1.32/src/modules/lie.cc
+cadabra-1.32/src/modules/lie.hh
+cadabra-1.32/src/modules/linear.cc
+cadabra-1.32/src/modules/linear.hh
+cadabra-1.32/src/modules/lists.cc
+cadabra-1.32/src/modules/lists.hh
+cadabra-1.32/src/modules/modules.hh
+cadabra-1.32/src/modules/numerical.cc
+cadabra-1.32/src/modules/numerical.hh
+cadabra-1.32/src/modules/output.cc
+cadabra-1.32/src/modules/output.hh
+cadabra-1.32/src/modules/pertstring.cc
+cadabra-1.32/src/modules/pertstring.hh
+cadabra-1.32/src/modules/properties.cc
+cadabra-1.32/src/modules/properties.hh
+cadabra-1.32/src/modules/relativity.cc
+cadabra-1.32/src/modules/relativity.hh
+cadabra-1.32/src/modules/select.cc
+cadabra-1.32/src/modules/select.hh
+cadabra-1.32/src/modules/substitute.cc
+cadabra-1.32/src/modules/substitute.hh
+cadabra-1.32/src/modules/tableaux.cc
+cadabra-1.32/src/modules/tableaux.hh
+cadabra-1.32/src/modules/xperm.c
+cadabra-1.32/src/modules/xperm.h
+cadabra-1.32/src/modules/xperm_new.c
+cadabra-1.32/src/modules/xperm_new.h
+cadabra-1.32/src/parser.cc
+cadabra-1.32/src/parser.hh
+cadabra-1.32/src/parser2.l
+cadabra-1.32/src/parser2.y
+cadabra-1.32/src/preprocessor.cc
+cadabra-1.32/src/preprocessor.hh
+cadabra-1.32/src/props.cc
+cadabra-1.32/src/props.hh
+cadabra-1.32/src/settings.cc
+cadabra-1.32/src/settings.hh
+cadabra-1.32/src/stopwatch.cc
+cadabra-1.32/src/stopwatch.hh
+cadabra-1.32/src/storage.cc
+cadabra-1.32/src/storage.hh
+cadabra-1.32/src/test_combinatorics.cc
+cadabra-1.32/src/test_gmp.cc
+cadabra-1.32/src/test_lie.cc
+cadabra-1.32/src/test_parser.cc
+cadabra-1.32/src/test_preprocessor.cc
+cadabra-1.32/src/test_tree.cc
+cadabra-1.32/src/test_tree.output
+cadabra-1.32/src/test_xperm.cc
+cadabra-1.32/src/test_young.cc
+cadabra-1.32/src/tree.hh
+cadabra-1.32/src/tree_example.cc
+cadabra-1.32/src/tree_example2.cc
+cadabra-1.32/src/tree_msvc.hh
+cadabra-1.32/src/tree_regression_tests.cc
+cadabra-1.32/src/tree_util.hh
+cadabra-1.32/src/txt_gui.cc
+cadabra-1.32/src/youngtab.cc
+cadabra-1.32/src/youngtab.hh
+cadabra-1.32/tests/
+cadabra-1.32/tests/Makefile.in
+cadabra-1.32/tests/algebra.cdb
+cadabra-1.32/tests/bench.cdb
+cadabra-1.32/tests/canonicalise.cdb
+cadabra-1.32/tests/combinat.cdb
+cadabra-1.32/tests/defaults.cdb
+cadabra-1.32/tests/derivative.cdb
+cadabra-1.32/tests/diff_geometry.cdb
+cadabra-1.32/tests/distribute.cdb
+cadabra-1.32/tests/dummies.cdb
+cadabra-1.32/tests/error
+cadabra-1.32/tests/eval.cdb
+cadabra-1.32/tests/factorise.cdb
+cadabra-1.32/tests/fieldtheory.cdb
+cadabra-1.32/tests/fierz.cdb
+cadabra-1.32/tests/gamma.cdb
+cadabra-1.32/tests/indexbracket.cdb
+cadabra-1.32/tests/indexsort.cdb
+cadabra-1.32/tests/kk.cdb
+cadabra-1.32/tests/library.cdb
+cadabra-1.32/tests/linear.cdb
+cadabra-1.32/tests/lists.cdb
+cadabra-1.32/tests/maple.cdb
+cadabra-1.32/tests/maxima.cdb
+cadabra-1.32/tests/mixed1.cdb
+cadabra-1.32/tests/monomials.cdb
+cadabra-1.32/tests/noncom.cdb
+cadabra-1.32/tests/numerical.cdb
+cadabra-1.32/tests/out1.exp
+cadabra-1.32/tests/output.cdb
+cadabra-1.32/tests/paper.cdb
+cadabra-1.32/tests/patterns.cdb
+cadabra-1.32/tests/poisson.cdb
+cadabra-1.32/tests/poisson_brackets.cdb
+cadabra-1.32/tests/powers.cdb
+cadabra-1.32/tests/procedure.cdb
+cadabra-1.32/tests/properties.cdb
+cadabra-1.32/tests/r4decompose.cdb
+cadabra-1.32/tests/relativity.cdb
+cadabra-1.32/tests/repeated.cdb
+cadabra-1.32/tests/sorting.cdb
+cadabra-1.32/tests/substitute.cdb
+cadabra-1.32/tests/superMaxwell.cdb
+cadabra-1.32/tests/superfield.cdb
+cadabra-1.32/tests/superfields.cdb
+cadabra-1.32/tests/symmetry.cdb
+cadabra-1.32/tests/tableaux.cdb
+cadabra-1.32/tests/tutorial2.cdb
+cadabra-1.32/tests/tutorial3.cdb
+cadabra-1.32/tests/tutorial4.cdb
+cadabra-1.32/tests/young.cdb
+cadabra-1.32/texmacs/
+cadabra-1.32/texmacs/init-cadabra.scm
+cadabra-1.32/texmacs/showcase1.png
+cadabra-1.32/texmacs/showcase1.tm
+cadabra-1.32/texmacs/showcase2.tm
+cadabra-1.32/texmacs/showcase3.png
+cadabra-1.32/texmacs/showcase3.tm
+cadabra-1.32/texmacs/showcase4.tm
+sudo -u fink-bld [ENV] sh -c /tmp/fink.C9ebA
+perl -pi -e 's|texmf|texmf-local|' gui/Makefile.in; perl -pi -e 's|-Wl,-dead_strip_dylibs| |' src/Makefile.in; perl -pi -e 's|maxima.res||' tests/Makefile.in; perl -pi -e 's|powers.res||' tests/Makefile.in
+sudo -u fink-bld [ENV] sh -c /tmp/fink.dJX3F
+/tmp/fink.SJjTT
+#!/bin/sh -ev
+
+  export CPPFLAGS="-I/sw/lib/pango-ft219/include/pango-1.0 -I/sw/lib/pango-ft219/include -I/sw/lib/freetype219/include/freetype2 -I/sw/lib/freetype219/include -I/sw/lib/fontconfig2/include -I/sw/include -DX_LOCALE -fnested-functions"
+  # export CPPFLAGS="-I%p/lib/pango-ft219/include/pango-1.0 -I%p/lib/pango-ft219/include -I%p/lib/freetype219/include/freetype2 -I%p/lib/freetype219/include -I%p/lib/fontconfig2/include -I%p/include -DX_LOCALE"
+  export LDFLAGS="-L/sw/lib/pango-ft219/lib -L/sw/lib/freetype219/lib -L/sw/lib/fontconfig2/lib -L/sw/lib"
+  export PKG_CONFIG_PATH="/sw/lib/pango-ft219/lib/pkgconfig:/sw/lib/fontconfig2/lib/pkgconfig:/sw/lib/freetype219/lib/pkgconfig:$PKG_CONFIG_PATH"
+  export FREETYPE_CONFIG=/sw/lib/freetype219/bin/freetype-config
+  # export CXXCPP=%p/bin/cpp-fsf-4.7
+  # export CC=%p/bin/gcc-fsf-4.7
+  if [ -f /sw/bin/mktexlsr ]; then mktexlsr /sw/etc/texmf.local; fi
+mktexlsr: /sw/etc/texmf.local: directory not writable. Skipping...
+mktexlsr: Done.
+  ./configure --prefix=/sw --disable-dependency-tracking
+checking for gcc... llvm-gcc-4.2
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether llvm-gcc-4.2 accepts -g... yes
+checking for llvm-gcc-4.2 option to accept ISO C89... none needed
+checking whether we are using the GNU C++ compiler... yes
+checking whether llvm-g++-4.2 accepts -g... yes
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... yes
+checking for a BSD-compatible install... /sw/bin/ginstall -c
+checking CFLAGS for maximum warnings... -Wall
+checking for lie... yes
+checking how to run the C++ preprocessor... llvm-g++-4.2 -E
+checking for grep that handles long lines and -e... /sw/bin/grep
+checking for egrep... /sw/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking pcre.h usability... yes
+checking pcre.h presence... yes
+checking for pcre.h... yes
+checking gmpxx.h usability... yes
+checking gmpxx.h presence... yes
+checking for gmpxx.h... yes
+checking pcrecpp.h usability... yes
+checking pcrecpp.h presence... yes
+checking for pcrecpp.h... yes
+checking for pkg-config... /sw/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for sigc... yes
+checking for modglue... yes
+checking for ptywrap... yes
+checking system type... Darwin
+-n Checking whether to use -fnested-functions...
+ yes
+checking whether to build the GUI... yes
+checking for sigc... yes
+checking for gtk... yes
+checking for pango... yes
+checking for GTKMM... yes
+checking for GLIBMM... yes
+checking for pangomm... yes
+checking for dvipng... yes
+checking for latex... yes
+checking for breqn package... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating src/modules/Makefile
+config.status: creating tests/Makefile
+config.status: creating gui/Makefile
+config.status: creating doc/Makefile
+config.status: creating src/config.h
+config.status: src/config.h is unchanged
+  make
+( cd src && make );
+make[1]: Entering directory `/sw/src/fink.build/cadabra-1.32-1/cadabra-1.32/src'
+Makefile:176: .depend: No such file or directory
+rm -f .depend
+for i in `find . -name "*.cc"`; \
+	do    llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -E -MM -MT `echo $i | sed -e 's/\.\///' -e 's/\.cc/\.o/'`  $i >> .depend; \
+	done
+make[1]: Leaving directory `/sw/src/fink.build/cadabra-1.32-1/cadabra-1.32/src'
+make[1]: Entering directory `/sw/src/fink.build/cadabra-1.32-1/cadabra-1.32/src'
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o preprocessor.o preprocessor.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o storage.o storage.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o display.o display.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o parser.o parser.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o modules/algebra.o modules/algebra.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o modules/pertstring.o modules/pertstring.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o modules/convert.o modules/convert.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o modules/gamma.o modules/gamma.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o modules/field_theory.o modules/field_theory.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o modules/select.o modules/select.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o modules/dummies.o modules/dummies.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o modules/output.o modules/output.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o modules/properties.o modules/properties.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o modules/relativity.o modules/relativity.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o modules/substitute.o modules/substitute.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o modules/tableaux.o modules/tableaux.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o modules/diff_geometry.o modules/diff_geometry.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o modules/numerical.o modules/numerical.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o modules/linear.o modules/linear.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o modules/combinat.o modules/combinat.cc
+llvm-gcc-4.2 -fnested-functions -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o modules/xperm_new.o modules/xperm_new.c
+modules/xperm_new.c: In function 'SGSofdummyset':
+modules/xperm_new.c:1392: warning: unused variable 'j'
+modules/xperm_new.c: In function 'double_coset_rep':
+modules/xperm_new.c:1684: warning: unused variable 'ii'
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o modules/lie.o modules/lie.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o modules/lists.o modules/lists.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o modules/eval.o modules/eval.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o main.o main.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o algorithm.o algorithm.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o manipulator.o manipulator.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o youngtab.o youngtab.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o combinatorics.o combinatorics.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o props.o props.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o settings.o settings.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o exchange.o exchange.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o defaults.o defaults.cc
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o stopwatch.o stopwatch.cc
+llvm-g++-4.2 -o cadabra -L/sw/lib/pango-ft219/lib -L/sw/lib/freetype219/lib -L/sw/lib/fontconfig2/lib -L/sw/lib   preprocessor.o storage.o display.o parser.o main.o algorithm.o manipulator.o youngtab.o combinatorics.o props.o settings.o exchange.o defaults.o stopwatch.o modules/algebra.o modules/pertstring.o modules/convert.o modules/gamma.o modules/field_theory.o modules/select.o modules/dummies.o modules/output.o modules/properties.o modules/relativity.o modules/substitute.o modules/tableaux.o modules/diff_geometry.o modules/numerical.o modules/linear.o modules/combinat.o modules/xperm_new.o modules/lie.o modules/lists.o modules/eval.o `pkg-config modglue --libs` -lgmpxx -lpcrecpp -lgmp
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o test_gmp.o test_gmp.cc
+llvm-g++-4.2 -o test_gmp test_gmp.o -L/sw/lib/pango-ft219/lib -L/sw/lib/freetype219/lib -L/sw/lib/fontconfig2/lib -L/sw/lib -lgmpxx -lgmp
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o test_preprocessor.o test_preprocessor.cc
+llvm-g++-4.2 -o test_preprocessor test_preprocessor.o preprocessor.o -L/sw/lib/pango-ft219/lib -L/sw/lib/freetype219/lib -L/sw/lib/fontconfig2/lib -L/sw/lib -lgmpxx -lgmp
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o test_tree.o test_tree.cc
+llvm-g++-4.2 -o test_tree test_tree.o
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o tree_example.o tree_example.cc
+llvm-g++-4.2 -o tree_example tree_example.o
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o test_combinatorics.o test_combinatorics.cc
+llvm-g++-4.2 -o test_combinatorics test_combinatorics.o combinatorics.o
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o test_young.o test_young.cc
+llvm-g++-4.2 -o test_young test_young.o youngtab.o combinatorics.o -L/sw/lib/pango-ft219/lib -L/sw/lib/freetype219/lib -L/sw/lib/fontconfig2/lib -L/sw/lib -lgmpxx -lgmp
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o tree_regression_tests.o tree_regression_tests.cc
+llvm-g++-4.2 -o tree_regression_tests tree_regression_tests.o
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o test_xperm.o test_xperm.cc
+llvm-gcc-4.2 -fnested-functions -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o modules/xperm.o modules/xperm.c
+llvm-g++-4.2 -o test_xperm test_xperm.o modules/xperm.o
+llvm-g++-4.2 -g -O2 -Wall -I. -I../src `pkg-config modglue --cflags` -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -c -o test_lie.o test_lie.cc
+llvm-g++-4.2 -o test_lie test_lie.o modules/lie.o `pkg-config --libs modglue`
+make[1]: Leaving directory `/sw/src/fink.build/cadabra-1.32-1/cadabra-1.32/src'
+( cd gui && make );
+make[1]: Entering directory `/sw/src/fink.build/cadabra-1.32-1/cadabra-1.32/gui'
+rm -f .depend
+Makefile:56: .depend: No such file or directory
+for i in `find . -name "*.cc"`; \
+	do    g++ -E -MM -MT `echo $i | sed -e 's/\.\///' -e 's/\.cc/\.o/'` -O2 -I. -I../include `pkg-config modglue --cflags` `pkg-config --cflags gtkmm-2.4` `pkg-config --cflags pango` $i >> .depend; \
+	done
+make[1]: Leaving directory `/sw/src/fink.build/cadabra-1.32-1/cadabra-1.32/gui'
+make[1]: Entering directory `/sw/src/fink.build/cadabra-1.32-1/cadabra-1.32/gui'
+llvm-g++-4.2 -Wall -g -O2 -Wall -D"DESTDIR=\"/sw\"" -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -O2 -I. -I../include `pkg-config modglue --cflags` `pkg-config --cflags gtkmm-2.4` `pkg-config --cflags pango` -c -o help.o help.cc
+llvm-g++-4.2 -Wall -g -O2 -Wall -D"DESTDIR=\"/sw\"" -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -O2 -I. -I../include `pkg-config modglue --cflags` `pkg-config --cflags gtkmm-2.4` `pkg-config --cflags pango` -c -o widgets.o widgets.cc
+llvm-g++-4.2 -Wall -g -O2 -Wall -D"DESTDIR=\"/sw\"" -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -O2 -I. -I../include `pkg-config modglue --cflags` `pkg-config --cflags gtkmm-2.4` `pkg-config --cflags pango` -c -o window.o window.cc
+window.cc: In member function 'std::string XCadabra::load_config()':
+window.cc:3288: warning: comparison is always false due to limited range of data type
+llvm-g++-4.2 -Wall -g -O2 -Wall -D"DESTDIR=\"/sw\"" -D"RELEASE=\"1.32\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\" -O2 -I. -I../include `pkg-config modglue --cflags` `pkg-config --cflags gtkmm-2.4` `pkg-config --cflags pango` -c -o main.o main.cc
+make[1]: Circular main.o <- main.o dependency dropped.
+llvm-g++-4.2 -o xcadabra help.o widgets.o window.o main.o ../src/stopwatch.o `pkg-config modglue --libs` `pkg-config --libs gtkmm-2.4` -lpcrecpp
+make[1]: Leaving directory `/sw/src/fink.build/cadabra-1.32-1/cadabra-1.32/gui'
+sudo -u fink-bld [ENV] sh -c /tmp/fink.yYBr2
+export CDB_LOG=1; make test || exit 2; make advtest || exit 2
+( cd src && make );
+make[1]: Entering directory `/sw/src/fink.build/cadabra-1.32-1/cadabra-1.32/src'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/sw/src/fink.build/cadabra-1.32-1/cadabra-1.32/src'
+==== Running tests ====
+( export CDB_PARANOID=1 && export CDB_ERRORS_ARE_FATAL=1 \
+     && export CDB_PRINTSTAR=1 && cd tests && make clean && make all);
+make[1]: Entering directory `/sw/src/fink.build/cadabra-1.32-1/cadabra-1.32/tests'
+rm -f *.res *~ cdb*.log timing.log
+make[1]: Leaving directory `/sw/src/fink.build/cadabra-1.32-1/cadabra-1.32/tests'
+make[1]: Entering directory `/sw/src/fink.build/cadabra-1.32-1/cadabra-1.32/tests'
+running test "pre-processor"...passed.
+running test "tree"...passed.
+running test "properties"...passed.
+running test "procedure"...passed.
+running test "substitute".../bin/sh: line 1: 33806 Segmentation fault: 11  ../src/cadabra --bare --input substitute.cdb > substitute.res
+make[1]: Leaving directory `/sw/src/fink.build/cadabra-1.32-1/cadabra-1.32/tests'
+make[1]: *** [substitute.res] Error 139
+make: *** [test] Error 2
+### execution of export failed, exit code 2
+### execution of /tmp/fink.yYBr2 failed, exit code 2
+Removing runtime build-lock...
+Removing build-lock package...
+/sw/bin/dpkg-lockwait -r fink-buildlock-cadabra-1.32-1
+(Reading database ... 247045 files and directories currently installed.)
+Removing fink-buildlock-cadabra-1.32-1 ...
+Failed: phase testing: cadabra-1.32-1 failed
+
+Before reporting any errors, please run "fink selfupdate" and try again.
+Also try using "fink configure" to set your maximum build jobs to 1 and
+attempt to build the package again.
+If you continue to have issues, please check to see if the FAQ on Fink's 
+website solves the problem.  If not, ask on one (not both, please) of
+these mailing lists:
+
+	The Fink Users List <fink-users@lists.sourceforge.net>
+	The Fink Beginners List <fink-beginners@lists.sourceforge.net>,
+
+with a carbon copy to the maintainer:
+
+	Kevin Horton <khorton01@rogers.com>
+
+Note that this is preferable to emailing just the maintainer directly,
+since most fink package maintainers do not have access to all possible
+hardware and software configurations.
+
+Please try to include the complete error message in your report.  This
+generally consists of a compiler line starting with e.g. "gcc" or "g++"
+followed by the actual error output from the compiler.
+
+Also include the following system information:
+Package manager version: 0.34.3
+Distribution version: selfupdate-rsync Thu Sep  6 05:23:55 2012, 10.8, x86_64
+Trees: local/main stable/main local/injected
+Xcode.app: 4.4.1
+Xcode command-line tools: 4.4.0.0.1.1249367152
+Max. Fink build jobs:  2
+
