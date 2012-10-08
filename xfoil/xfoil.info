@@ -18,7 +18,7 @@ CompileScript: <<
   mv Makefile Makefile.orig
   mv Makefile_DP Makefile
   make osgen
-  make osmap.o FLG="-O -ffixed-line-length-none -fdefault-real-8  -fdefault-integer-8"
+  make osmap.o FLG="-O0 -ffixed-line-length-none -fdefault-real-8  -fdefault-integer-8"
   cd ..
   echo 'bin/osgen osmaps_ns.lst'
   bin/osgen osmaps_ns.lst
