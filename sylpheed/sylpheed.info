@@ -1,5 +1,5 @@
 Package: sylpheed
-Version: 3.3
+Version: 3.3.0
 Revision: 1
 
 Depends: <<
@@ -22,7 +22,7 @@ BuildDepends: <<
 Conflicts: sylpheed-ssl, sylpheed-gpgme, sylpheed, sylpheed-beta-gpgme, sylpheed-beta
 Replaces: sylpheed-ssl, sylpheed-gpgme, sylpheed, sylpheed-beta-gpgme, sylpheed-beta
 
-Source: http://sylpheed.sraoss.jp/sylpheed/%v/sylpheed-%v.tar.bz2
+Source: http://sylpheed.sraoss.jp/sylpheed/3.3/sylpheed-%v.tar.bz2
 Source-MD5: 4e0e41f05607e5c2542a7dfd166aee77
 
 SetCPPFLAGS: -I%p/lib/system-openssl/include 
