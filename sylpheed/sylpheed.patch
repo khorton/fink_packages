@@ -1,0 +1,12 @@
+diff -Nurd -x'*~' sylpheed-3.4.1/src/Makefile.in.orig sylpheed-3.4.1/src/Makefile.in
+--- sylpheed-3.4.1/src/Makefile.in.orig 2014-05-02 08:58:42.000000000 -0400
++++ sylpheed-3.4.1/src/Makefile.in 2014-05-02 09:00:12.000000000 -0400
+@@ -434,7 +434,7 @@
+ @NATIVE_WIN32_TRUE@	../libsylph/libsylph-0.la sylpheed.res
+ @NATIVE_WIN32_FALSE@sylpheed_DEPENDENCIES = libsylpheed-plugin-0.la \
+ @NATIVE_WIN32_FALSE@	../libsylph/libsylph-0.la
+-sylpheed_LDFLAGS =
++sylpheed_LDFLAGS = -F/System/Library/Frameworks/Foundation.framework -framework Foundation
+ 
+ DEFAULT_INCLUDES =  -I. -I$(srcdir) -I$(top_builddir)
+ depcomp = $(SHELL) $(top_srcdir)/depcomp
