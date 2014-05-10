@@ -1,8 +1,20 @@
 Package: ale
 Version: 0.8.11.2
 Revision: 1
-Source: freebsd:%n/%n-%v.tar.gz
-Source-MD5: e66a9c9af6a60dc46134fdacf6ce97d7
+Source: ftp://ftp.freebsd.org/pub/FreeBSD/ports/distfiles/%n-%v.tar.gz
+Source-MD5: 1ed83d080a4bf80f88ed78acb5149c26
 GCC: 4.0
-BuildDepends: libncursesw5 (>= 5.4-20041023-1001), libgettext8-dev, gettext-tools, libiconv-dev, fink (>= 0.24.12-1)
-Depends: ncurses, libncursesw5-shlibs (>= 5.4-20041023-1001), libgettext8-shlibs, libiconv, %N-shlibs (>= %v-%r)
+BuildDepends: imagemagick7-dev, fink-package-precedence, fink (>= 0.24.12-1)
+Depends: imagemagick7-shlibs
+ConfigureParams: --with-imagemagick=yes
+
+DocFiles: AUTHORS BUG-REPORTING ChangeLog COPYING INSTALL NEWS README TODO 
+Description: ALE - Anti-Lameness Engine
+DescDetail: <<
+Anti-Lameness Engine (ALE) is a synthetic capture engine and renderer
+which accepts a sequence of image frames as input and outputs
+rendered images, registration data or 3D models.
+<<
+License: GPL
+Maintainer: Kevin Horton <khorton01@rogers.com>
+Homepage: http://aminet.net/package/gfx/misc/ale.lha
