@@ -1,0 +1,8 @@
+Package: ale
+Version: 0.8.11.2
+Revision: 1
+Source: freebsd:%n/%n-%v.tar.gz
+Source-MD5: e66a9c9af6a60dc46134fdacf6ce97d7
+GCC: 4.0
+BuildDepends: libncursesw5 (>= 5.4-20041023-1001), libgettext8-dev, gettext-tools, libiconv-dev, fink (>= 0.24.12-1)
+Depends: ncurses, libncursesw5-shlibs (>= 5.4-20041023-1001), libgettext8-shlibs, libiconv, %N-shlibs (>= %v-%r)
