@@ -1,0 +1,13 @@
+Package: imagemagick-pm
+Version: 6.87
+Revision: 1
+Source: mirror:cpan:authors/id/J/JC/JCRISTY/PerlMagick-%v.tar.gz
+Source-MD5: cd0a6a0ebf0f938da15bd39d05f185da
+Type: perl
+UpdatePOD: true
+DocFiles: Changes LGPL-3 README
+License: LGPL
+Description: Perl interface to ImageMagick
+Maintainer: Kevin Horton <khorton01@rogers.com>
+Homepage: http://search.cpan.org/~jcristy/PerlMagick-6.87/Magick.pm
+
