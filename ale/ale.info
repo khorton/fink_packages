@@ -3,13 +3,14 @@ Version: 0.8.11.2
 Revision: 1
 Source: ftp://ftp.freebsd.org/pub/FreeBSD/ports/distfiles/%n-%v.tar.gz
 Source-MD5: 1ed83d080a4bf80f88ed78acb5149c26
+
 GCC: 4.0
 BuildDepends: imagemagick7-dev, fink-package-precedence, fink (>= 0.24.12-1)
 Depends: imagemagick7-shlibs
 ConfigureParams: --with-imagemagick=yes
 
 DocFiles: AUTHORS BUG-REPORTING ChangeLog COPYING INSTALL NEWS README TODO 
-Description: ALE - Anti-Lameness Engine
+Description: Anti-Lameness Engine
 DescDetail: <<
 Anti-Lameness Engine (ALE) is a synthetic capture engine and renderer
 which accepts a sequence of image frames as input and outputs
