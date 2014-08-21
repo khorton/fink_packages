@@ -1,8 +1,8 @@
 Package: pandoc
-Version: 1.11.1
+Version: 1.13.0.1
 Revision: 1
 Source: http://hackage.haskell.org/packages/archive/%n/%v/%n-%v.tar.gz
-Source-MD5: e895b22745affba37c0ba5e6e6d0f17c
+Source-MD5: 67a5643d810bd56390ae1847b84953d0
 SourceDirectory: %n-%v
 
 BuildDepends: <<
