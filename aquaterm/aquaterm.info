@@ -51,6 +51,7 @@ SplitOff2: <<
    Library/Frameworks/AquaTerm.framework/Resources
    Library/Frameworks/AquaTerm.framework/Versions/Current
    Library/Frameworks/AquaTerm.framework/Versions/A/Headers
+   Library/Frameworks/AquaTerm.framework/Versions/A/Resources
    include
    lib/libaquaterm.dylib
    share/%N
