@@ -10,7 +10,7 @@ Source: http://web.mit.edu/drela/Public/web/xfoil/xfoil6.97.tar.gz
 Source-MD5: b9ce001ed838be880262c75038d489c5
 SourceDirectory: Xfoil
 PatchFile: %n.patch
-PatchFile-MD5: e808e4bc47e4c100be4df9f49bee32f0
+PatchFile-MD5: aea842ead9631004b3c313a1df3f6edb
 PatchScript: sed 's|@BUILDPREFIX@|%b|g' <%{PatchFile} | patch -p1
 CompileScript: <<
   #!/bin/sh -ev
