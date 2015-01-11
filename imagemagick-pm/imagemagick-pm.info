@@ -2,7 +2,15 @@ Package: imagemagick-pm
 Version: 6.87
 Revision: 1
 Source: mirror:cpan:authors/id/J/JC/JCRISTY/PerlMagick-%v.tar.gz
-Source-MD5: cd0a6a0ebf0f938da15bd39d05f185da
+Source-MD5: c95e602c02b3586acf2441f24c55494b
+
+PatchFile: %n.patch
+PatchFile-MD5: 948727cf1c14aaa7786975b96bfe7888
+PatchScript: sed 's|@PREFIX@|%p|g' < %{PatchFile} | patch -p1
+
+BuildDepends: fink (>= 0.30.0), extutils-makemaker-pm, imagemagick7-dev
+Depends: imagemagick, imagemagick6.q16-common, imagemagick7-shlibs
+
 Type: perl
 UpdatePOD: true
 DocFiles: Changes LGPL-3 README
