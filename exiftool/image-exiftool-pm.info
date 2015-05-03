@@ -1,6 +1,6 @@
 Info2: <<
 Package: image-exiftool-pm
-Version: 9.76
+Version: 9.94
 Revision: 1
 Description: Read and write image/movie meta information
 Type: perl
@@ -8,7 +8,7 @@ License: Artistic/GPL
 Maintainer: Benjamin Reed <image-exiftool-pm@fink.raccoonfink.com>
 
 Source: http://www.sno.phy.queensu.ca/~phil/exiftool/Image-ExifTool-%v.tar.gz
-Source-MD5: 2dedfc6df3bf0fe04877f0335c0ac315
+Source-MD5: 44b66ccf64c4023efbee559d8b1834f3
 
 UseMaxBuildJobs: true
 
