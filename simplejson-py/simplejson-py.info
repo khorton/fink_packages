@@ -25,6 +25,6 @@ DescDetail: <<
   It is pure Python code with no dependencies.
 <<
 License: OSI-Approved
-Homepage: http://undefined.org/python/#simplejson
+Homepage: https://github.com/simplejson/simplejson/
 
 <<
