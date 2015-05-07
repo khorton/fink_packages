@@ -10,7 +10,7 @@ Depends: <<
   pyqt5-mac-py%type_pkg[python] (>= 5.4.1-2) 
 <<
 Source: http://www.kilohotel.com/fink/convertall-%v.tar.gz
-Source-MD5: 9378cb3ab40cf944570d53bcc5718ee8
+Source-MD5: b68244fa83ccbdeaf223b9ad22399606
 SourceDirectory: ConvertAll
 CompileScript: <<
 echo "Nothing to do in compile phase"
