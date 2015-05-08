@@ -7,7 +7,7 @@ Maintainer: Kevin Horton <khorton01@rogers.com>
 Depends: <<
   python%type_pkg[python], 
   python%type_pkg[python]-shlibs, 
-  pyqt5-mac-py%type_pkg[python] (>= 5.4.1-2) 
+  pyqt4-mac-py%type_pkg[python] (>= 4.11.3-1) 
 <<
 Source: http://www.kilohotel.com/fink/convertall-%v.tar.gz
 Source-MD5: b68244fa83ccbdeaf223b9ad22399606
@@ -17,10 +17,10 @@ echo "Nothing to do in compile phase"
 <<
 InstallScript: <<
   #! /bin/sh -ev
-  export PYTHONPATH="%p/lib/qt5-mac/lib/python%type_raw[python]/site-packages:$PYTHONPATH"
+  export PYTHONPATH="%p/lib/qt4-mac/lib/python%type_raw[python]/site-packages:$PYTHONPATH"
   %p/bin/python%type_raw[python] install.py -p %p -b %d
   rm -fr %i/share/doc/convertall
-  perl -pi -e 's|exec|exec env PYTHONPATH="%p/lib/qt5-mac/lib/python%type_raw[python]/site-packages:$PYTHONPATH"|g' %i/bin/convertall
+  perl -pi -e 's|exec|exec env PYTHONPATH="%p/lib/qt4-mac/lib/python%type_raw[python]/site-packages:$PYTHONPATH"|g' %i/bin/convertall
 <<
 License: GPL
 DocFiles: doc/*
