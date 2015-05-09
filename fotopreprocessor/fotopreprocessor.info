@@ -1,0 +1,40 @@
+Info2: <<
+Package: fotopreprocessor
+Version: 15
+Revision: 1
+Type: python (2.7)
+Maintainer: Kevin Horton <khorton01@rogers.com>
+Depends: <<
+  python%type_pkg[python], 
+  python%type_pkg[python]-shlibs, 
+  pyqt4-mac-py%type_pkg[python] (>= 4.11.3-1) 
+<<
+Source: http://download.savannah.gnu.org/releases/fotopreprocessor/FotoPreProcessor-rev000%v.tar.gz
+Source-MD5: 4b0fddad2f6de30348876bc665d230b7
+SourceDirectory: FotoPreProcessor-rev000%v
+CompileScript: <<
+echo "Nothing to do in compile phase"
+<<
+InstallScript: <<
+#   #! /bin/sh -ev
+#   export PYTHONPATH="%p/lib/qt4-mac/lib/python%type_raw[python]/site-packages:$PYTHONPATH"
+#   %p/bin/python%type_raw[python] install.py -p %p -b %d
+#   rm -fr %i/share/doc/convertall
+#   perl -pi -e 's|exec|exec env PYTHONPATH="%p/lib/qt4-mac/lib/python%type_raw[python]/site-packages:$PYTHONPATH"|g' %i/bin/convertall
+install -d %i/bin
+install -m 755 FotoPreProcessor*.py %i/bin
+<<
+License: GPL
+DocFiles: COPYING README
+Description: Exiftool GUI
+DescDetail: <<
+  FotoPreProcessor (FPP) is a PyQt4-based frontend for exiftool 
+  and allows to graphically edit the (EXIF) metadata of all images 
+  in a directory.
+  
+  This involves changing picture orientation, picking GPS coordinates 
+  (pickable via embedded OpenStreetMap access), applying timezone 
+  correction, adding keywords and appending copyright notices.
+<<
+Homepage: https://abelbeck.wordpress.com/fotopreprocessor/
+<<
