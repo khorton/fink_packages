@@ -2,13 +2,13 @@ Package: avl
 Version: 3.27
 Revision: 1
 License: GPL
-Depends: gcc44-shlibs, x11-shlibs, x11
-BuildDepends: fink (>= 0.24.12), gcc44, x11-dev
+Depends: gcc49-shlibs, x11-shlibs, x11
+BuildDepends: fink (>= 0.24.12), gcc49-compiler, x11-dev
 Source: http://web.mit.edu/drela/Public/web/avl/avl%v.tar.gz
 Source-MD5: c2ea3256d3d4351d8d8a3e76cf8a8a37
 SourceDirectory: Avl
 PatchFile: %n.patch
-PatchFile-MD5: ed0258b5f846a362ebf6c3fe19d5a520
+PatchFile-MD5: 29844f72c0b991c66b9f76f2e1398360
 PatchScript: sed 's|@PREFIX@|%p|g' <%{PatchFile} | patch -p1
 CompileScript: <<
   #!/bin/sh -ev
